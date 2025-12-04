@@ -354,7 +354,7 @@ document.getElementById('passwordForm').addEventListener('submit',function(e){
   e.preventDefault();
   const pwd = $('passwordInput').value.trim();
   const err = $('errorMessage');
-  if(pwd === 'Suhaila16/08/2023 Abdelhameed'){
+  if(pwd === 'بعبدك سهيلتي'){
     // فتح التطبيق
     document.getElementById('loginScreen').style.opacity='0';
     setTimeout(()=>{ document.getElementById('loginScreen').style.display='none'; document.getElementById('mainApp').style.display='block';
@@ -462,9 +462,11 @@ function saveMessageFav(msg, btn){
 
 /* ------------------ Surprises (hourly) ------------------ */
 const surprises = [
-  {type:'message',content:'بزازك و كسك و طيزك و شفايفك و خدودك و جسمك وحشوني اوي🤭'},
-  {type:'animation',content:'ضحكتك جميله جدا و صوتك بيغني و يدفيني🫂'},
-  {type:'question',content:'بجد انتي مميزه اوي اوي ي سهيلتي🫂'}
+  {type:'message',content:'لو احبكي مليون فانا واحد منهم🥺
+و اذا احبكي شخص واحد فهذا انا🥺
+واذا لم يحبكي احد فاعلمي انني قد مت🥺🫂'},
+  {type:'animation',content:'كسك جميل اوي جنني امبارح🥺🫂'},
+  {type:'question',content:'بزازك وحشتني بحبك اوى بجد بحبك بحبك🥺🫂'}
 ];
 
 function showSurprise(s){
