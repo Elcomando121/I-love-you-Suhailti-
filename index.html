@@ -347,15 +347,8 @@ $('togglePassword').addEventListener('click',function(){
   const p = $('passwordInput');
   const i = this.querySelector('i');
   if(p.type==='password'){ p.type='text'; i.classList.remove('fa-eye'); i.classList.add('fa-eye-slash'); }
-  else { p.type='password'; i.classList.remove('fa-eye-slash'); i.classList.add('fa-eye'); }
-});
-
-document.getElementById('passwordForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  const pwd = $('passwordInput').value.trim();
-  const err = $('errorMessage');
-  if(pwd === 'Suhaila16/08/2023 Abdelhameed'){
-    // فتح التطبيق
+  else { p.type='password'; i.classList.remove('fa-eye-slash'); i.classList.add('fa-eye'); 
+        
     document.getElementById('loginScreen').style.opacity='0';
     setTimeout(()=>{ document.getElementById('loginScreen').style.display='none'; document.getElementById('mainApp').style.display='block';
       setTimeout(()=>{ document.getElementById('mainApp').style.opacity='1'; initMainApp(); },100);
